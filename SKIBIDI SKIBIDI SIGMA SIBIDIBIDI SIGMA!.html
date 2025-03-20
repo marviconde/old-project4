@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Top 3 Foods!</title>
+    <style>
+        /* Dark mode styling */
+        body {
+            background-color: #121212;
+            color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #f0f0f0;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .food-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .food-item img {
+            max-width: 300px;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+
+        .food-item-description {
+            max-width: 500px;
+        }
+
+        .food-item h2 {
+            font-size: 2em;
+            margin-top: 0;
+        }
+
+        .food-item p {
+            font-size: 1.1em;
+            line-height: 1.6em;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #f0f0f0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .date {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Top 3 Foods!</h1>
+        <p class="date">Date: <span id="current-date"></span></p>
+    </header>
+
+    <div class="content">
+        <!-- Sisig -->
+        <div class="food-item">
+            <img src="c:\Users\Student-PC\Downloads\skibidi sisig.jpg" alt="Sisig">
+            <div class="food-item-description">
+                <h2>Sisig!</h2>
+                <p>
+                    Sisig is a Filipino dish made from pork, typically served sizzling on a hot plate. It's crispy, savory, and often served with a raw egg on top. As you can probably tell, I like spicy foods! So the rest of these are probably spicy, so just bear with me.
+                </p>
+            </div>
+        </div>
+
+        <!-- Butter Chicken -->
+        <div class="food-item">
+            <img src="c:\Users\Student-PC\Downloads\oiled up ahh chicken.webp" alt="Butter Chicken">
+            <div class="food-item-description">
+                <h2>Butter Chicken!</h2>
+                <p>
+                    Butter Chicken is a rich and creamy Indian dish made with marinated chicken cooked in a luscious tomato-based sauce. It’s mildly spicy and pairs beautifully with naan or rice.
+                </p>
+            </div>
+        </div>
+
+        <!-- Biryani -->
+        <div class="food-item">
+            <img src="c:\Users\Student-PC\Downloads\chicken biryani for nig#ers.jpeg" alt="Biryani">
+            <div class="food-item-description">
+                <h2>Biryani!</h2>
+                <p>
+                    Biryani is a flavorful rice dish loaded with spices, and usually includes meat like chicken or beef. It’s a perfect blend of aromatic spices and tender meat, making it a truly comforting dish.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 My Food Blog</p>
+    </footer>
+
+    <script>
+        // Get the current date and display it in the header
+        const currentDate = new Date().toLocaleDateString();
+        document.getElementById('current-date').textContent = currentDate;
+    </script>
+</body>
+</html>
